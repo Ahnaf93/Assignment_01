@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 20px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-sizing: border-box;
+    text-align: center;
+    overflow-x: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+h1 {
+    color: #ff008a;
+}
+
+
+#song-input {
+    padding: 5px;
+    outline: none;
+}
+
+#song-input:focus {
+    border: 2px solid #ff008a;
+}
+
+.btn-submit {
+    border: none;
+    padding: 5px;
+    background: #ff008a;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-submit:hover {
+    background: #000;
+    color: #ff008a;
+}
+
+h2 {
+    color: #fff;
+}
+
+#songList {
+    max-height: 300px;
+    overflow-y: auto;
+    -webkit-overflow-scolling: touch;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(300px);
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+#songList li {
+    padding: 5px;
+    background: #fff;
+}
+
+#songList li:nth-child(even) {
+    background: #1b645e52; 
+}
+
+.remove-song {
+    float: right;
+    cursor: pointer;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.remove-song:hover {
+    color: #9a0000;
+}
+
+#songList::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+#songList::-webkit-scrollbar-thumb {
+    background: #ff008a;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+#songList::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#songList:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+  
